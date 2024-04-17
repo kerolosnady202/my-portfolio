@@ -1,0 +1,23 @@
+<div class="text-center p-2 position-relative ">
+  <h2 class=" name">{{projectDetails?.name}}</h2>
+  <div class="d-flex flex-wrap tools mb-2 justify-content-center">
+    <div class="tool" *ngFor="let tool of projectDetails?.tools">{{tool}}</div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div class="w-75 het" >
+      <owl-carousel-o [options]="customOptions">
+        <ng-container *ngFor="let slide of projectDetails?.image">
+          <ng-template carouselSlide >
+            <img [src]="slide" [alt]="slide">
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+  <p class="mx-auto w-75 ">{{projectDetails?.desc}}</p>
+  <div class="d-flex justify-content-center icon" >
+    <div> <a [href]="projectDetails?.github" target="_blank"><i title="to view the project file" class="fa-brands fa-github"></i></a>  </div>
+    <div *ngIf="projectDetails?.live"><a [href]="projectDetails?.live" target="_blank"><i title="to view the project in live server" class="fa-solid fa-link"></i></a> </div>
+  </div>
+  <button mat-button mat-dialog-close class="btn btn-danger close">X</button>
+</div>

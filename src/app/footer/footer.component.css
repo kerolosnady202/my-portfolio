@@ -1,0 +1,38 @@
+footer{
+  padding: 20px 5px;
+  background-color: rgb(36, 36, 39);
+  color: white;
+}
+footer span.name{
+  color: var(--main-text);
+  letter-spacing: 2px;
+}
+footer .contact {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 20px;
+}
+@media (max-width:767px) {
+  footer .contact {
+    flex-direction: column;
+   }
+  footer .contact a {
+    padding: 10px 0px;
+   }
+}
+footer .contact a{
+ /*  color: var(--main-text); */
+  font-size: 20px;
+  margin: 0px 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+footer .contact i{
+  color: var(--main-text);
+}
+footer .contact span{
+  color: white;
+  margin-left: 4px;
+  font-size: 16px;
+}

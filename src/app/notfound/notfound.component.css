@@ -1,0 +1,9 @@
+.error{
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+.error img{
+  max-width: 100%;
+  /* height: 500px; */
+}

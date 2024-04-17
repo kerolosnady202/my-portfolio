@@ -1,0 +1,51 @@
+
+.data{
+  width: 80%;
+  padding: 20px 5px;
+  margin: 10px auto;
+  background-color: #a7a7a724;
+  border-radius: 10px;
+}
+.contact{
+  width: 80%;
+  margin: 10px auto;
+}
+.contact{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media (max-width:767px) {
+  .data{
+      width: 100%
+  }
+  .contact{
+      width: 100%
+  }
+}
+.contact .contact-item{
+  display: flex;
+ /*  align-items: center; */
+  padding: 10px;
+  margin: 0;
+}
+.contact .contact-item i {
+  font-size: 15px;
+  color: var(--main-text);
+  margin-right: 10px;
+}
+.contact .contact-item p {
+  margin-bottom: 0;
+  color: #83817f;
+}
+.icons a{
+  color: var(--main-text);
+  font-size: 20px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.icons a:hover i {
+  /* color: white; */
+  transform: scale(1.2,1.2);
+}
+

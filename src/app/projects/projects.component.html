@@ -1,0 +1,12 @@
+<div class="main">
+  <div class="container py-4">
+    <div class="row d-flex justify-content-center ">
+      <div class="col-md-5 m-3   details text-center" *ngFor="let project of projects">
+           <h4>{{project?.name}}</h4>
+           <img [src]="project?.coverimage" alt="">
+           <p>{{project?.desc}}</p>
+           <button class="btn btn-primary" (click)="getproject(project?.id)">View More</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.mat-expansion-panel-header-title, .mat-expansion-panel-header-description {
+ text-align: center;
+ display: block;
+
+}
+@media (max-width:767px) {
+  .expansion{
+    width: 100% !important;
+  }
+
+}
+.icons i{
+  font-size: 50px;
+  color: var(--main-text);
+}
+.icons p{
+  font-size: 20px;
+
+}

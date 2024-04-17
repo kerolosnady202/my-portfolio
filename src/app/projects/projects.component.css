@@ -1,0 +1,32 @@
+.main{
+ /*  background-color: rgb(14, 15, 22); */
+  background-color: rgb(22 27 39 / 0.6);
+}
+/* body{
+  background-color: black;
+} */
+
+.details{
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.details:hover{
+  transform: translateY(-7px);
+  box-shadow: #ff761199  0px 8px 24px;
+}
+.details img{
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  max-height: 230px;
+}
+.details h4{
+  color: var(--main-text);
+  letter-spacing: 2px;
+}
+.details p{
+  margin-top: 10px;
+  color: #3c3c3c73;
+}
